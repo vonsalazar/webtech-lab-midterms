@@ -3,13 +3,29 @@
 <head>
     <title>PWA - index.html</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/app.js" async></script>
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
-    <h1>Header PWA</h1>
-    <p>Paragraph PWA</p>
-    <img src="images/sample.jpg" alt="Sample Image">
+    <h1>Natural Disaster Preparedness PWA</h1>
+
+    <h2>Web Application Description</h2>
+    <p>The web application will provide the user with information on the natural disasters, the different categories of disasters, and the ways on preparing for and adapting to these disasters. A quiz can also be taken by users which will evaluate their knowledge of the various disasters described within the web application.</p>
+
+    <h2>Features:</h2>
+
+    <h3>Disaster Preparedness Information</h3>
+    <p>Different categories of disasters are described in detail such as the potential hazards they bring and the harm and devastation a calamity can inflict. The resources needed and the methods for preparing and adjusting to the conditions during these events are also described in the web application.</p>
+    <img src="images/sample1.png" alt="Sample Image" width="100%" height="auto">
+    
+    <h3>Preparedness Quiz</h3>
+    <p>A quiz can be taken by users to test their knowledge of the information that is covered by the web application. The answers will be stored client-side using IndexedDB.</p>
+    <img src="images/sample2.png" alt="Sample Image" width="100%" height="auto">
+    
+    <h3>Push Notifications</h3>
+    <p>Push notifications will simply welcome the user once subscribed and send messages encouraging to read content provided by the web application. Notifications can also encourage users to take the preparedness quiz if they haven't already.</p>
+    <img src="images/sample3.png" alt="Sample Image" width="100%" height="auto">
 </body>
+<script src="scripts/app.js" async></script>
 
 </html>

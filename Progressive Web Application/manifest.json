@@ -1,0 +1,32 @@
+{
+    "name": "Natural Disaster Preparedness",
+    "short_name": "Disaster Preparedness",
+    "start_url": "/index.html",
+    "description": "A web application which can help users be prepared for natural calamities by providing information on disaster preparedness.",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "skyblue",
+    "theme_color": "skyblue",
+    "icons": [
+    {
+        "src": "images/homeicon32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+    },
+    {
+        "src": "images/homeicon64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+    },
+    {
+        "src": "images/homeicon128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    },
+    {
+        "src": "images/homeicon.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    }]
+}
