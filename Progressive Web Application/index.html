@@ -10,32 +10,50 @@
 
 <body>
 
-    <div class="topnav" id="topnav">
+    <nav class="topnav" id="topnav">
         <a href="#home" class="active">Home</a>
-        <a href="#disasters">Natural Disaster</a>
+        <a href="#disasters">Natural Disasters</a>
         <a href="#preparedness">Disaster Preparedness</a>
-        <a href="#pubservices">Public Safety & Services</a>
+        <a href="#pubservices">Public Safety Services</a>
         <a href="#about">About Us</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveTopNav()">&#9776;</a>
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="responsiveTopNav()">&#9776;</a>
+    </nav>
+
+    <div class="banner">
+        <div class="bannerbox">
+            <h1>DISASTER RISK PREPAREDNESS AND REDUCTION</h1>
+        </div>
     </div>
-    <h1>Natural Disaster Preparedness PWA</h1>
 
-    <h2>Web Application Description</h2>
-    <p>The web application will provide the user with information on the natural disasters, the different categories of disasters, and the ways on preparing for and adapting to these disasters. Information on health and public safety service center locations are also provided by the application to users.</p>
+    <section class="websitedef">
+        <h2>Be prepared when calamity strikes</h2>
+        <p>Disaster preparedness is the measures that are taken to prepare and reduce the effects of a disaster. Being ready when a disaster strikes can reduce damages and other risks, making recovery much quicker and easier.</p>
+    </section>
 
-    <h2>Features:</h2>
+    <section class="websitefeat">
+        <div class="homerow">
+            <div class="homecolumn">
+                <img src="images/educatecolumn1.png">
+                <h3>Educate</h3>
+                <p>Know more about the different categories of disasters within the area as well as their risks and potential dangers.</p>
+            </div>
+            <div class="homecolumn">
+                <img src="images/preparecolumn2.png">
+                <h3>Prepare</h3>
+                <p>Learn about methods on keeping safe and know what supplies or resources may be needed in order to be prepared.</p>
+            </div>
+            <div class="homecolumn">
+                <img src="images/locatecolumn3.png">
+                <h3>Locate</h3>
+                <p>Learn information on the location of multiple police stations, hospitals, and other public safety services within the Baguio-Benguet area.</p>
+            </div>
+        </div>
+    </section>
 
-    <h3>Disaster Preparedness Information</h3>
-    <p>Different categories of disasters are described in detail such as the potential hazards they bring and the harm and devastation a calamity can inflict. The resources needed and the methods for preparing and adjusting to the conditions during these events are also described in the web application.</p>
-    <img src="images/sample1.png" alt="Sample Image" width="100%" height="auto">
-    
-    <h3>Health and Public Safety Services</h3>
-    <p>Users are able to find the nearest health, law enforcement, or other public safety service center. Information about these locations include the location name, service type, contact numbers, address, a small map with details of the nearest landmarks, and the longitude and latitude of the location. This data will be stored client-side using IndexedDB. Users may also set their location in order to make it easier to find the nearest service centers.</p>
-    <img src="images/sample2.png" alt="Sample Image" width="100%" height="auto">
-    
-    <h3>Push Notifications</h3>
-    <p>A push notification will welcome the user once subscribed and send messages encouraging the user to read content provided by the web application. Users will also be notified of the nearest health and public safety services once they have set their current location.</p>
-    <img src="images/sample3.png" alt="Sample Image" width="100%" height="auto">
+    <footer>
+        <p>IT 324L Web Systems and Technologies. &copy; 2018 Saint Louis University</p>
+    </footer>
+
 </body>
 
 </html>
