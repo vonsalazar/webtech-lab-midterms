@@ -3,10 +3,21 @@
 <head>
     <title>PWA - index.html</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="manifest" href="manifest.json">
+    <script src="scripts/app.js" async></script>
 </head>
 
 <body>
+
+    <div class="topnav" id="topnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#disasters">Natural Disaster</a>
+        <a href="#preparedness">Disaster Preparedness</a>
+        <a href="#pubservices">Public Safety & Services</a>
+        <a href="#about">About Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveTopNav()">&#9776;</a>
+    </div>
     <h1>Natural Disaster Preparedness PWA</h1>
 
     <h2>Web Application Description</h2>
@@ -26,6 +37,5 @@
     <p>A push notification will welcome the user once subscribed and send messages encouraging the user to read content provided by the web application. Users will also be notified of the nearest health and public safety services once they have set their current location.</p>
     <img src="images/sample3.png" alt="Sample Image" width="100%" height="auto">
 </body>
-<script src="scripts/app.js" async></script>
 
 </html>
