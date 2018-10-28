@@ -2,8 +2,10 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 section {
@@ -181,8 +183,8 @@ pre {
 
 .websitedef {
     background-color: #b50000;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
@@ -199,11 +201,7 @@ pre {
 .homecolumn {
     float: left;
     width: 33.33%;
-    padding-top: 80px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 80px;
-    height: 300px;
+    padding: 50px;
     text-align: center;
 }
 
@@ -223,7 +221,6 @@ pre {
     content: "";
     display: table;
     clear: both;
-    padding-bottom: 150px;
 }
 
 @media screen and (max-width: 600px) {

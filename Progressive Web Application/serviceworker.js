@@ -1,14 +1,21 @@
 var cacheName = 'pwa';
 var cacheTargets = [
     '/',
+    '/manifest.json',
     '/index.html',
+    '/about.html',
+    '/disasters.html',
+    '/preparedness.html',
+    '/pubservices.html',
+    '/fonts/segoeui.woff',
     '/images/homeicon.png',
     '/images/homeicon128.png',
     '/images/homeicon64.png',
     '/images/homeicon32.png',
-    '/images/sample1.png',
-    '/images/sample2.png',
-    '/images/sample3.png',
+    '/images/homebanner.jpg',
+    '/images/educatecolumn1.png',
+    '/images/preparecolumn2.png',
+    '/images/locatecolumn3.png',
     '/scripts/app.js',
     '/styles/main.css'
 ];
