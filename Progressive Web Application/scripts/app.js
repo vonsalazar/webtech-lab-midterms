@@ -5,3 +5,12 @@ if ('serviceWorker' in navigator) {
                  console.log('Service Worker Registration Successful');
              });
 }
+
+function responsiveTopNav() {
+    var x = document.getElementById("topnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
