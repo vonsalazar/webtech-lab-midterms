@@ -96,6 +96,42 @@ pre {
 	line-height: 18.5667px;
 }
 
+li {
+    font-family: Segoe UI;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+ul {
+    font-family: Segoe UI;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+ol {
+    font-family: Segoe UI;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+dl {
+    font-family: Segoe UI;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
 /** Top Navigation Bar **/
 
 .topnav {
@@ -227,4 +263,114 @@ pre {
     .homecolumn {
         width: 100%
     }
+}
+
+/** Disasters Page **/
+
+.disastersheading {
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+.disastersheading h1{
+    line-height: 40px;
+}
+
+.disasterssection {
+    padding: 10px;
+}
+
+.disasterssection h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.disasterssection h3 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.disasterssection p {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.disasterssection pre {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.disasterssection ol {
+    padding-top: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 10px;
+}
+
+.disasterssection li {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.disasterssection dl {
+    font-size: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.disasterssection dt {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.disasterssection dd {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.disasterssection img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+
+.disasterssection {
+    padding: 10px;
+}
+
+.disasterssection img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+}
+
+#disasterssectiondesc {
+    text-align: center;
+}
+
+#stormSignalImg {
+    width: 40%;
 }
