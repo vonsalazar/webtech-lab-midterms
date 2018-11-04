@@ -7,6 +7,7 @@
     <link rel="manifest" href="manifest.json">
     <script src="scripts/app.js" async></script>
     <script src="scripts/location.js" async></script>
+    <script src="scripts/geolocationdemo.js" async></script>
 </head>
 
 <body>
@@ -32,6 +33,12 @@
     <h3>Enter a Location Name in La Trinidad:</h3>
     <p>Location Name:</p> <input type="text" id="locationTrinidadInput">
     <button onclick="readTrinidadLocation()">Submit</button>
+
+    <h3>Click Button to get current Coordinates</h3>
+    <button onclick="getLocation()">Get My Location</button>
+    <div id="geolocationModule">
+
+    </div>
 
     <footer>
         <p>IT 324L Web Systems and Technologies. &copy; 2018 Saint Louis University</p>
