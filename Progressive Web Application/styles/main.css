@@ -62,7 +62,7 @@ h3 {
 
 h4 {
 	font-family: Segoe UI;
-	font-size: 18px;
+	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 700;
@@ -111,7 +111,9 @@ ul {
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 20px;
+    line-height: 20px;
+    list-style-type: none;
+    padding: 0;
 }
 
 ol {
@@ -161,33 +163,6 @@ dl {
 .topnav a:hover {
     background-color: #dc0000;
     color: white;
-}
-
-@media screen and (max-width: 1080px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    .topnav.responsive {
-        float: none;
-        position: relative;
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
 }
 
 /** Home Page **/
@@ -257,12 +232,6 @@ dl {
     content: "";
     display: table;
     clear: both;
-}
-
-@media screen and (max-width: 600px) {
-    .homecolumn {
-        width: 100%
-    }
 }
 
 /** Disasters Page **/
@@ -373,4 +342,82 @@ dl {
 
 #stormSignalImg {
     width: 40%;
+}
+
+/** Public Services Page **/
+
+.pubservicesheading {
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+.pubservicesheading h1{
+    line-height: 40px;
+}
+
+.pubservicescolumn {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+}
+
+.pubservicescolumn h3 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.pubservicescolumn p {
+    font-size: 16px;
+}
+
+.pubservicescolumn img {
+    width: 35%;
+}
+
+.pubservicesarticle {
+    padding-top: 50px;
+}
+
+.pubservicesrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/** Content Responsiveness to Device Screen **/
+
+@media screen and (max-width: 1080px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        float: none;
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .homecolumn {
+        width: 100%
+    }
 }

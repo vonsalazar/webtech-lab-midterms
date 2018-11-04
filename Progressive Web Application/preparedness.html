@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="manifest" href="manifest.json">
     <script src="scripts/app.js" async></script>
+    <script src="scripts/location.js" async></script>
 </head>
 
 <body>
@@ -19,7 +20,18 @@
         <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="responsiveTopNav()">&#9776;</a>
     </nav>
 
-    
+    <button onclick="addLocationBaguio()">Add a Location in Baguio</button>
+    <button onclick="addLocationTrinidad()">Add a Location in La Trinidad</button>
+    <button onclick="readAllBaguioLocations()">Read Locations in Baguio</button>
+    <button onclick="readAllTrinidadLocations()">Read Locations in La Trinidad</button>
+
+    <h3>Enter a Location Name in Baguio:</h3>
+    <p>Location Name:</p> <input type="text" id="locationBaguioInput">
+    <button onclick="readBaguioLocation()">Submit</button>
+
+    <h3>Enter a Location Name in La Trinidad:</h3>
+    <p>Location Name:</p> <input type="text" id="locationTrinidadInput">
+    <button onclick="readTrinidadLocation()">Submit</button>
 
     <footer>
         <p>IT 324L Web Systems and Technologies. &copy; 2018 Saint Louis University</p>

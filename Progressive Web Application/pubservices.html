@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="manifest" href="manifest.json">
     <script src="scripts/app.js" async></script>
+    <script src="scripts/location.js" async></script>
 </head>
 
 <body>
@@ -18,6 +19,54 @@
         <a href="about.html">About Us</a>
         <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="responsiveTopNav()">&#9776;</a>
     </nav>
+
+    <section class="pubservicesheading">
+        <h1>Public Safety Services Directory</h1>
+        <p>In times of disaster, please do not hesitate to seek assistance from these public safety centers and offices. Remember that your safety is one of the government's top priorities.</p>
+        <!--button onclick="getDataBaguio()">CLICKME!</button-->
+    </section>
+
+    <section class="pubservicesmain">
+        <div class="pubservicesrow">
+            <div class="pubservicescolumn">
+                <h2>Baguio</h2>
+                <p>This section describes the information regarding the official public safety service centers currently operating within the Baguio area. This includes Hospitals, Medical Centers, Police Stations, and Fire Stations.</p>
+                <!--p>Enter a Location: </p><input type="text" id="locationBaguioInput">
+                <button onclick="getDataBaguio()">Submit</button-->
+                <ul id="baguioLocationList">
+                    <!--article class="pubservicesarticle" id="baguioLocation">
+                        <h3 id="bLocationName"></h3>
+                        <img id="bLocationImg" src=images/sampleImage.jpg>
+                        <h4>Address:</h4>
+                        <p id="bLocationAddress"></p>
+                        <h4>Contact Number(s):</h4>
+                        <p id="bContactNumber"></p>
+                        <h4>Map:</h4>
+                        <img id="bMapImg" src="images/sampleMap.jpg">
+                    </article-->
+                </ul>
+            </div>
+
+            <div class="pubservicescolumn">
+                <h2>La Trinidad</h2>
+                <p>This section describes the information regarding the public safety service centers currently operating within the La Trinidad area. This includes Hospitals, Medical Centers, Police Stations, and Fire Stations.</p>
+                <p>Enter a Location: </p><input type="text" id="locationTrinidadInput">
+                <button onclick="getDataTrinidad()">Submit</button>
+                <ul id="">
+                    <article class="pubservicesarticle" id="trinidadLocation">
+                        <h3 id="tLocationName"></h3>
+                        <img id="tLocationImg" src="images/sampleImage.jpg">
+                        <h4>Address:</h4>
+                        <p id="tLocationAddress"></p>
+                        <h4>Contact Number(s):</h4>
+                        <p id="tContactNumber"></p>
+                        <h4>Map:</h4>
+                        <img id="tMapImg" src="images/sampleMap.jpg">
+                    </article>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>IT 324L Web Systems and Technologies. &copy; 2018 Saint Louis University</p>
