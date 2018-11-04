@@ -23,15 +23,12 @@
     <section class="pubservicesheading">
         <h1>Public Safety Services Directory</h1>
         <p>In times of disaster, please do not hesitate to seek assistance from these public safety centers and offices. Remember that your safety is one of the government's top priorities.</p>
+        <h4>Do you want to know the nearest hospital/police station/public safety center from your current location? Click the button!</h4>
+        <button class="pubservicesgeolocbutton" onclick="getNearestEmergencyCenters()">Locate Nearest Safety Center</button>
     </section>
 
-    <section class="pubservicesgeoloc">
-        <h2></h2>
-        <p>Click the button to see the nearest public safety services from your current location.</p>
-        <button></button>
-        <ul id="pubservicesgeolocfunction">
+    <section class="pubservicesgeoloc" id="pubservicesgeolocfunction">
 
-        </ul>
     </section>
 
     <section class="pubservicesmain">
@@ -39,8 +36,6 @@
             <div class="pubservicescolumn">
                 <h2>Baguio</h2>
                 <p>This section describes the information regarding the official public safety service centers currently operating within the Baguio area. This includes Hospitals, Medical Centers, Police Stations, and Fire Stations.</p>
-                <!--p>Enter a Location: </p><input type="text" id="locationBaguioInput">
-                <>button onclick="getDataBaguio()">Submit</button-->
                 <ul id="baguioLocationList">
 
                 </ul>
@@ -49,8 +44,6 @@
             <div class="pubservicescolumn">
                 <h2>La Trinidad</h2>
                 <p>This section describes the information regarding the public safety service centers currently operating within the La Trinidad area. This includes Hospitals, Medical Centers, Police Stations, and Fire Stations.</p>
-                <!--p>Enter a Location: </p><input type="text" id="locationTrinidadInput">
-                <button onclick="getDataTrinidad()">Submit</button-->
                 <ul id="trinidadLocationList">
 
                 </ul>
