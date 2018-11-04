@@ -237,16 +237,16 @@ function readTrinidadLocation() {
     };
 }
 
-var bLocationName = document.getElementById('bLocationName');
-var bLocationAddress = document.getElementById('bLocationAddress');
-var bContactNumber = document.getElementById('bContactNumber');
+//var bLocationName = document.getElementById('bLocationName');
+//var bLocationAddress = document.getElementById('bLocationAddress');
+//var bContactNumber = document.getElementById('bContactNumber');
 
 function getDataBaguio() {
 
-    //var input = document.getElementById('locationBaguioInput').value;
+    var input = document.getElementById('locationBaguioInput').value;
 
     var baguioLocObjStore = database.transaction('baguioLocations').objectStore('baguioLocations');
-    var dbGetRequest = baguioLocObjStore.index('name').get('Baguio General Hospital');
+    var dbGetRequest = baguioLocObjStore.index('name').get(input);
 
     dbGetRequest.onerror = function(event) {
         alert('There was an error processing the request.');
@@ -254,6 +254,7 @@ function getDataBaguio() {
 
     dbGetRequest.onsuccess = function(event) {
         if(dbGetRequest.result) {
+
             var locationListItem;
             var name, addressHeader, addressInfo, contactHeader, contactInfo;
             var nameText, addressHeaderText, addressInfoText, contactHeaderText, contactInfoText;
@@ -292,9 +293,9 @@ function getDataBaguio() {
     };
 };
 
-var tLocationName = document.getElementById('tLocationName');
-var tLocationAddress = document.getElementById('tLocationAddress');
-var tContactNumber = document.getElementById('tContactNumber');
+//var tLocationName = document.getElementById('tLocationName');
+//var tLocationAddress = document.getElementById('tLocationAddress');
+//var tContactNumber = document.getElementById('tContactNumber');
 
 function getDataTrinidad() {
 
@@ -309,9 +310,41 @@ function getDataTrinidad() {
 
     dbGetRequest.onsuccess = function(event) {
         if(dbGetRequest.result) {
-            tLocationName.innerHTML += dbGetRequest.result.name;
-            tLocationAddress.innerHTML += dbGetRequest.result.address;
-            tContactNumber.innerHTML += dbGetRequest.result.contact;
+
+            var locationListItem;
+            var name, addressHeader, addressInfo, contactHeader, contactInfo;
+            var nameText, addressHeaderText, addressInfoText, contactHeaderText, contactInfoText;
+
+            //tLocationName.innerHTML += dbGetRequest.result.name;
+            //tLocationAddress.innerHTML += dbGetRequest.result.address;
+            //tContactNumber.innerHTML += dbGetRequest.result.contact;
+
+            locationListItem = document.createElement('li');
+            name = document.createElement('h3');
+            addressHeader = document.createElement('h4');
+            addressInfo = document.createElement('p');
+            contactHeader = document.createElement('h4');
+            contactInfo = document.createElement('p');
+
+            nameText = document.createTextNode(dbGetRequest.result.name);
+            addressHeaderText = document.createTextNode('Address: ');
+            addressInfoText = document.createTextNode(dbGetRequest.result.address);
+            contactHeaderText = document.createTextNode('Contact Number: ');
+            contactInfoText = document.createTextNode(dbGetRequest.result.contact);
+
+            name.appendChild(nameText);
+            addressHeader.appendChild(addressHeaderText);
+            addressInfo.appendChild(addressInfoText);
+            contactHeader.appendChild(contactHeaderText);
+            contactInfo.appendChild(contactInfoText);
+
+            locationListItem.appendChild(name);
+            locationListItem.appendChild(addressHeader);
+            locationListItem.appendChild(addressInfo);
+            locationListItem.appendChild(contactHeader);
+            locationListItem.appendChild(contactInfo);
+
+            document.getElementById('trinidadLocationList').appendChild(locationListItem);
         };
     };
 
