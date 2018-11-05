@@ -113,7 +113,6 @@ ul {
 	font-variant: normal;
 	font-weight: 400;
     line-height: 20px;
-    list-style-type: none;
     padding: 0;
 }
 
@@ -244,6 +243,7 @@ dl {
     padding-right: 25px;
     padding-bottom: 25px;
 }
+
 .disastersheading h1{
     line-height: 40px;
 }
@@ -325,24 +325,129 @@ dl {
     height: auto;
 }
 
-.disasterssection {
-    padding: 10px;
-}
-
-.disasterssection img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: auto;
-}
-
 #disasterssectiondesc {
     text-align: center;
 }
 
 #stormSignalImg {
     width: 40%;
+}
+
+/** Disaster Preparedness **/
+
+.preparednessheading {
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+}
+
+.preparednessheading h1 {
+    line-height: 40px;
+}
+
+
+.preparednesssection {
+    padding: 10px;
+}
+
+.preparednesssection h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.preparednesssection h3 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.preparednesssection p {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.preparednesssection pre {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.preparednesssection ul {
+    padding-top: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 10px;
+}
+
+.preparednesssection li {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.preparednesssection dl {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.preparednesssection dt {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.preparednesssection dd {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.preparednesssection img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+
+.preparednesscolumn {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+}
+
+.preparednesscolumn h3 {
+    font-size: 20px;
+}
+
+.preparednesscolumn p {
+    font-size: 16px;
+}
+
+.preparednesscolumn img {
+    width: 35%;
+}
+
+.preparednessrow:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /** Public Services Page **/
@@ -417,10 +522,6 @@ dl {
     width: 80%;
 }
 
-.pubservicesarticle {
-    padding-top: 50px;
-}
-
 .pubservicesrow:after {
     content: "";
     display: table;
@@ -460,7 +561,9 @@ dl {
     .homecolumn {
         width: 100%;
     }
-
+    .preparednesscolumn {
+        width: 100%;
+    }
     .pubservicescolumn {
         width: 100%;
     }

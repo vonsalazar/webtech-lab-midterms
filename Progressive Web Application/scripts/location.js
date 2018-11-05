@@ -117,6 +117,7 @@ function getNearestEmergencyCenters() {
     var locationData = [];
 
     var baguioLocObjStore = database.transaction('baguioLocations').objectStore('baguioLocations');
+    var trinidadLocObjStore = database.transaction('trinidadLocations').objectStore('trinidadLocations');
 
     baguioLocObjStore.openCursor().onsuccess = function(event) {
 
@@ -134,10 +135,26 @@ function getNearestEmergencyCenters() {
         
     };
 
+    trinidadLocObjStore.openCursor().onsuccess = function(event) {
+
+        var cursor = event.target.result;
+
+        if (cursor) {
+
+            locationData.push( [cursor.value.locationID, cursor.value.name, cursor.value.address, cursor.value.contact, cursor.value.image, cursor.value.x_coord, cursor.value.y_coord] );
+
+            cursor.continue();
+
+        } else {
+            console.log('[TRINIDAD LOCATIONS] Data access completed.');
+        };
+    };
+
     var errorResponse = document.getElementById('pubservicesgeolocfunction');
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(userLocation);
+        console.log(userLocation);
     } else {
         errorResponse.innerHTML = '<p>There was an error processing the request.</p>';
     };
@@ -158,8 +175,8 @@ function getNearestEmergencyCenters() {
         targetLongitude = DegToRad(targetLongitude);
 
         var earthRadius = 6371;
-        var x = (targetLongitude - userLongitude) * Math.cos((userLatitude + targetLongitude) / 2);
-        var y = (targetLatitude - userLongitude);
+        var x = (targetLongitude - userLongitude) * Math.cos((userLatitude + targetLatitude) / 2);
+        var y = (targetLatitude - userLatitude);
         var distance = Math.sqrt(x * x + y * y) * earthRadius;
         return distance;
 

@@ -4,7 +4,7 @@ function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(userLocation);
     } else {
-        response.innerHTML = 'There was an error processing the request.';
+        response.innerHTML = '<p>There was an error processing the request.</p>';
     };
 };
 
@@ -31,7 +31,6 @@ function pythagorasEquirectangular(lat1, lon1, lat2, lon2) {
 
 function nearestLocation(latitude, longitude) {
     var mindif = 99999;
-    var closestIndex;
     var closestLocation;
     //var closestName, closestAddress, closestContact;
 
@@ -41,21 +40,10 @@ function nearestLocation(latitude, longitude) {
             //closestName = index[0];
             //closestAddress = index[1];
             //closestContact = index[2];
-            closestIndex = index;
-            closestLocation = locations[closestIndex];
+            closestLocation = locations[index];
             mindif = dif;
         };
     };
-    //contactInfo = document.createElement('p');
-
-    //nameText = document.createTextNode(cursor.value.name);
-    //contactInfo.appendChild(contactInfoText);
-
-    //locationListItem.appendChild(contactInfo);
-
-    //document.getElementById('baguioLocationList').appendChild(locationListItem);
-
-    console.log(closestLocation[1]);
 
     var locName, locAddressHeader, locAddress, locContactHeader, locContact, locNameText, locAddressHeaderText, locAddressText, locContactHeaderText, locContactText;
 
